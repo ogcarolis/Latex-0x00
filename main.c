@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void gerar_tabuada(int);
+void tabuadaFazer(int);
 
 int main(int argc, char *argv[]) {
     int base;
@@ -11,12 +11,12 @@ int main(int argc, char *argv[]) {
     else 
         base = 2;
   
-    gerar_tabuada(base);
+    tabuadaFazer(base);
 
     exit(EXIT_SUCCESS);
 }
 
-void gerar_tabuada(int base) {
+void tabuadaFazer(int base) {
     const char *arquivo = "tabela.tex";
 
     FILE * fp = fopen(arquivo,"wt");
